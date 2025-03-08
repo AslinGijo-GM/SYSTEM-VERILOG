@@ -6,8 +6,9 @@ module dimm;
     
     foreach( dim[i,j] ) begin
       
-      dim[i][j] = $urandom;
-      $display("dim[%0d][%0d] = %0d", i,j,dim[i][j]);
+      my_array1[4][30] = 1'b1;    //not out bound
+      my_array1[29][4] = 1'b1;    // out bound
+      my_array1[4] = 31'b1;       //not valid
       
     end
     
