@@ -28,7 +28,11 @@ module dyncase;
     
     p = new();
     p1 = new();
+    c = new();
     p1 = c;
+    
+    $display(" childmem - %d",c);
+    $display(" p1mem - %d",p1);
     
     $display(" $CAST - %d",$cast(c,p1));
     if($cast(c,p1))
