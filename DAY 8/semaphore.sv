@@ -26,9 +26,4 @@ module semaphore_test;
     
   end 
   
-  
-  
-  
-  
-  
 endmodule
